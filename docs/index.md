@@ -2,63 +2,63 @@
 icon: lucide/rocket
 ---
 
-# Get started
+# 开始使用
 
-For full documentation visit [zensical.org](https://zensical.org/docs/).
+完整文档请访问 [zensical.org](https://zensical.org/docs/)。
 
-## Commands
+## 命令
 
-* [`zensical new`][new] - Create a new project
-* [`zensical serve`][serve] - Start local web server
-* [`zensical build`][build] - Build your site
+* [`zensical new`][new] - 创建新项目
+* [`zensical serve`][serve] - 启动本地Web服务器
+* [`zensical build`][build] - 构建您的站点
 
   [new]: https://zensical.org/docs/usage/new/
   [serve]: https://zensical.org/docs/usage/preview/
   [build]: https://zensical.org/docs/usage/build/
 
-## Examples
+## 示例
 
-### Admonitions
+### 注释框
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/)
+> 前往 [文档](https://zensical.org/docs/authoring/admonitions/)
 
 !!! note
 
-    This is a **note** admonition. Use it to provide helpful information.
+    这是一个 **note** 注释框。用于提供有用的信息。
 
 !!! warning
 
-    This is a **warning** admonition. Be careful!
+    这是一个 **warning** 注释框。请注意！
 
-### Details
+### 详细信息
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/#collapsible-blocks)
+> 前往 [文档](https://zensical.org/docs/authoring/admonitions/#collapsible-blocks)
 
-??? info "Click to expand for more info"
+??? info "点击展开更多信息"
     
-    This content is hidden until you click to expand it.
-    Great for FAQs or long explanations.
+    此内容在您点击展开前是隐藏的。
+    非常适合常见问题解答或长篇解释。
 
-## Code Blocks
+## 代码块
 
-> Go to [documentation](https://zensical.org/docs/authoring/code-blocks/)
+> 前往 [文档](https://zensical.org/docs/authoring/code-blocks/)
 
-``` python hl_lines="2" title="Code blocks"
+``` python hl_lines="2" title="代码块"
 def greet(name):
     print(f"Hello, {name}!") # (1)!
 
 greet("Python")
 ```
 
-1.  > Go to [documentation](https://zensical.org/docs/authoring/code-blocks/#code-annotations)
+1.  > 前往 [文档](https://zensical.org/docs/authoring/code-blocks/#code-annotations)
 
-    Code annotations allow to attach notes to lines of code.
+    代码注释允许为代码行附加注释。
 
-Code can also be highlighted inline: `#!python print("Hello, Python!")`.
+代码也可以内联高亮： `#!python print("Hello, Python!")`。
 
-## Content tabs
+## 内容标签
 
-> Go to [documentation](https://zensical.org/docs/authoring/content-tabs/)
+> 前往 [文档](https://zensical.org/docs/authoring/content-tabs/)
 
 === "Python"
 
@@ -72,44 +72,44 @@ Code can also be highlighted inline: `#!python print("Hello, Python!")`.
     println!("Hello from Rust!");
     ```
 
-## Diagrams
+## 图表
 
-> Go to [documentation](https://zensical.org/docs/authoring/diagrams/)
+> 前往 [文档](https://zensical.org/docs/authoring/diagrams/)
 
 ``` mermaid
 graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
+  A[开始] --> B{错误？};
+  B -->|是| C[嗯...];
+  C --> D[调试];
   D --> B;
-  B ---->|No| E[Yay!];
+  B ---->|否| E[好！];
 ```
 
-## Footnotes
+## 脚注
 
-> Go to [documentation](https://zensical.org/docs/authoring/footnotes/)
+> 前往 [文档](https://zensical.org/docs/authoring/footnotes/)
 
-Here's a sentence with a footnote.[^1]
+这里是一个带有脚注的句子。[^1]
 
-Hover it, to see a tooltip.
+悬停查看工具提示。
 
-[^1]: This is the footnote.
+[^1]: 这是脚注。
 
 
-## Formatting
+## 格式化
 
-> Go to [documentation](https://zensical.org/docs/authoring/formatting/)
+> 前往 [文档](https://zensical.org/docs/authoring/formatting/)
 
-- ==This was marked (highlight)==
-- ^^This was inserted (underline)^^
-- ~~This was deleted (strikethrough)~~
+- ==这是标记（高亮）==
+- ^^这是插入（下划线）^^
+- ~~这是删除（删除线）~~
 - H~2~O
 - A^T^A
 - ++ctrl+alt+del++
 
-## Icons, Emojis
+## 图标、表情符号
 
-> Go to [documentation](https://zensical.org/docs/authoring/icons-emojis/)
+> 前往 [文档](https://zensical.org/docs/authoring/icons-emojis/)
 
 * :sparkles: `:sparkles:`
 * :rocket: `:rocket:`
@@ -117,20 +117,16 @@ Hover it, to see a tooltip.
 * :memo: `:memo:`
 * :eyes: `:eyes:`
 
-## Maths
+## 数学公式
 
-> Go to [documentation](https://zensical.org/docs/authoring/math/)
+> 前往 [文档](https://zensical.org/docs/authoring/math/)
 
 $$
 \cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
 $$
 
-!!! warning "Needs configuration"
-    Note that MathJax is included via a `script` tag on this page and is not
-    configured in the generated default configuration to avoid including it
-    in a pages that do not need it. See the documentation for details on how
-    to configure it on all your pages if they are more Maths-heavy than these
-    simple starter pages.
+!!! warning "需要配置"
+    请注意，MathJax 是通过此页面上的 `script` 标签包含的，并且在生成的默认配置中没有配置，以避免将其包含在不需要它的页面中。有关如何在所有页面上配置它的详细信息，请参阅文档，如果您的页面比这些简单入门页面包含更多的数学内容。
 
 <script id="MathJax-script" async src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script>
@@ -148,19 +144,19 @@ $$
   };
 </script>
 
-## Task Lists
+## 任务列表
 
-> Go to [documentation](https://zensical.org/docs/authoring/lists/#using-task-lists)
+> 前往 [文档](https://zensical.org/docs/authoring/lists/#using-task-lists)
 
-* [x] Install Zensical
-* [x] Configure `zensical.toml`
-* [x] Write amazing documentation
-* [ ] Deploy anywhere
+* [x] 安装 Zensical
+* [x] 配置 `zensical.toml`
+* [x] 编写出色的文档
+* [ ] 部署到任何地方
 
-## Tooltips
+## 工具提示
 
-> Go to [documentation](https://zensical.org/docs/authoring/tooltips/)
+> 前往 [文档](https://zensical.org/docs/authoring/tooltips/)
 
-[Hover me][example]
+[悬停查看][example]
 
-  [example]: https://example.com "I'm a tooltip!"
+  [example]: https://example.com "我是工具提示！"
