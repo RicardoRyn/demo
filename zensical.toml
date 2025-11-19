@@ -11,13 +11,13 @@
 # The site_name is shown in the page header and the browser window title
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_name
-site_name = "Project Demo"
+site_name = "plotfig"
 
 # The site_description is included in the HTML head and should contain a
 # meaningful description of the site content for use by search engines.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_description
-site_description = "A new project generated from the default template project."
+site_description = "plotfig是一个用于认知神经领域科研绘图的python包。"
 
 # The site_author attribute. This is used in the HTML head element.
 #
@@ -45,8 +45,8 @@ Copyright &copy; 2025 The authors
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 # nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
+#   { "简介" = "index.md" },
+#   { "安装" = "installation.md" }
 # ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
