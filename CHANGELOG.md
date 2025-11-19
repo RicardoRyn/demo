@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/RicardoRyn/demo/compare/v0.1.0...v0.2.0) (2025-11-19)
+
+
+### Features ✨
+
+* **math:** add subtraction function ([8e1d1d9](https://github.com/RicardoRyn/demo/commit/8e1d1d95ca66f13504e48e9f5317b8bed4883fcc))
+
 ## 0.1.0 (2025-11-18)
 
 
