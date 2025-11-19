@@ -1,162 +1,30 @@
+# 简介
+
+`plotfig` 是一个专为科学数据可视化设计的 Python 库，致力于为认知神经科研工作人员提供高效、易用且美观的图形绘制工具。
+该项目基于业界主流的可视化库—— `matplotlib`、`surfplot` 和 `plotly`等库开发，融合了三者的强大功能，能够满足神经科学以及脑连接组学中多种场景下的复杂绘图需求。
+
+![plotfig](./assets/plotfig.png)
+
+## 项目结构
+
+项目采用模块化设计，包含如下主要功能模块：
+
+- `bar.py`：条形图绘制，适用于分组数据的对比展示。
+- `correlation.py`：相关性矩阵可视化，便于分析变量间的相关性分布。
+- `matrix.py`：通用矩阵可视化，支持多种配色和注释方式。
+- `brain_surface.py`：脑表面可视化，实现三维脑表面图集结构的绘制。
+- `circos.py`：弦图可视化，适合平面展示脑区之间的连接关系。
+- `brain_connection.py`：玻璃脑连接可视化，支持复杂的脑网络结构展示。
+
+## 特性
+
+- `plotfig` API 设计简洁，参数灵活，适合科研人员和数据分析师快速集成到自己的数据分析流程中。
+- 其模块化架构便于后续功能扩展和自定义开发。
+- 结合 `matplotlib` 支持矢量图或高分辨率位图和交互式 HTML 输出，适合论文发表和学术展示。
+
 ---
-icon: lucide/rocket
----
 
-# 开始使用
+烫知识：一张图上的所有元素[^1]。
+![Parts of a Figure](https://matplotlib.org/stable/_images/anatomy.png)
 
-完整文档请访问 [zensical.org](https://zensical.org/docs/)。
-
-## 命令
-
-* [`zensical new`][new] - 创建新项目
-* [`zensical serve`][serve] - 启动本地Web服务器
-* [`zensical build`][build] - 构建您的站点
-
-  [new]: https://zensical.org/docs/usage/new/
-  [serve]: https://zensical.org/docs/usage/preview/
-  [build]: https://zensical.org/docs/usage/build/
-
-## 示例
-
-### 注释框
-
-> 前往 [文档](https://zensical.org/docs/authoring/admonitions/)
-
-!!! note
-
-    这是一个 **note** 注释框。用于提供有用的信息。
-
-!!! warning
-
-    这是一个 **warning** 注释框。请注意！
-
-### 详细信息
-
-> 前往 [文档](https://zensical.org/docs/authoring/admonitions/#collapsible-blocks)
-
-??? info "点击展开更多信息"
-    
-    此内容在您点击展开前是隐藏的。
-    非常适合常见问题解答或长篇解释。
-
-## 代码块
-
-> 前往 [文档](https://zensical.org/docs/authoring/code-blocks/)
-
-``` python hl_lines="2" title="代码块"
-def greet(name):
-    print(f"Hello, {name}!") # (1)!
-
-greet("Python")
-```
-
-1.  > 前往 [文档](https://zensical.org/docs/authoring/code-blocks/#code-annotations)
-
-    代码注释允许为代码行附加注释。
-
-代码也可以内联高亮： `#!python print("Hello, Python!")`。
-
-## 内容标签
-
-> 前往 [文档](https://zensical.org/docs/authoring/content-tabs/)
-
-=== "Python"
-
-    ``` python
-    print("Hello from Python!")
-    ```
-
-=== "Rust"
-
-    ``` rs
-    println!("Hello from Rust!");
-    ```
-
-## 图表
-
-> 前往 [文档](https://zensical.org/docs/authoring/diagrams/)
-
-``` mermaid
-graph LR
-  A[开始] --> B{错误？};
-  B -->|是| C[嗯...];
-  C --> D[调试];
-  D --> B;
-  B ---->|否| E[好！];
-```
-
-## 脚注
-
-> 前往 [文档](https://zensical.org/docs/authoring/footnotes/)
-
-这里是一个带有脚注的句子。[^1]
-
-悬停查看工具提示。
-
-[^1]: 这是脚注。
-
-
-## 格式化
-
-> 前往 [文档](https://zensical.org/docs/authoring/formatting/)
-
-- ==这是标记（高亮）==
-- ^^这是插入（下划线）^^
-- ~~这是删除（删除线）~~
-- H~2~O
-- A^T^A
-- ++ctrl+alt+del++
-
-## 图标、表情符号
-
-> 前往 [文档](https://zensical.org/docs/authoring/icons-emojis/)
-
-* :sparkles: `:sparkles:`
-* :rocket: `:rocket:`
-* :tada: `:tada:`
-* :memo: `:memo:`
-* :eyes: `:eyes:`
-
-## 数学公式
-
-> 前往 [文档](https://zensical.org/docs/authoring/math/)
-
-$$
-\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
-$$
-
-!!! warning "需要配置"
-    请注意，MathJax 是通过此页面上的 `script` 标签包含的，并且在生成的默认配置中没有配置，以避免将其包含在不需要它的页面中。有关如何在所有页面上配置它的详细信息，请参阅文档，如果您的页面比这些简单入门页面包含更多的数学内容。
-
-<script id="MathJax-script" async src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [["\\(", "\\)"]],
-      displayMath: [["\\[", "\\]"]],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      ignoreHtmlClass: ".*|",
-      processHtmlClass: "arithmatex"
-    }
-  };
-</script>
-
-## 任务列表
-
-> 前往 [文档](https://zensical.org/docs/authoring/lists/#using-task-lists)
-
-* [x] 安装 Zensical
-* [x] 配置 `zensical.toml`
-* [x] 编写出色的文档
-* [ ] 部署到任何地方
-
-## 工具提示
-
-> 前往 [文档](https://zensical.org/docs/authoring/tooltips/)
-
-[悬停查看][example]
-
-  [example]: https://example.com "我是工具提示！"
+[^1]: [Quick start guide of matplotlib.](https://matplotlib.org/stable/tutorials/introductory/usage.html#parts-of-a-figure)
