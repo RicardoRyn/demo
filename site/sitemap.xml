@@ -6,4 +6,28 @@
       <url>
         <loc>https://ricardoryn.github.io/demo/installation/</loc>
       </url>
+      <url>
+        <loc>https://ricardoryn.github.io/demo/changelog/</loc>
+      </url>
+      <url>
+        <loc>https://ricardoryn.github.io/demo/usage/single_group/</loc>
+      </url>
+      <url>
+        <loc>https://ricardoryn.github.io/demo/usage/multi_groups/</loc>
+      </url>
+      <url>
+        <loc>https://ricardoryn.github.io/demo/usage/matrix/</loc>
+      </url>
+      <url>
+        <loc>https://ricardoryn.github.io/demo/usage/correlation/</loc>
+      </url>
+      <url>
+        <loc>https://ricardoryn.github.io/demo/usage/circos/</loc>
+      </url>
+      <url>
+        <loc>https://ricardoryn.github.io/demo/usage/brain_surface/</loc>
+      </url>
+      <url>
+        <loc>https://ricardoryn.github.io/demo/usage/brain_connectivity/</loc>
+      </url>
 </urlset>

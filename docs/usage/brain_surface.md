@@ -7,13 +7,13 @@
 `plot_brain_surface_figure` 函数基于 `surfplot` 库开发，提供了一个统一且简化的接口来绘制人脑、猕猴脑和黑猩猩脑的脑区图。
 目前支持多种脑图谱包括：
 
-1. 人 Glasser (HCP-MMP) 图集[^1]。[图集 CSV 文件](../../assets/atlas_csv/human_glasser.csv)。
-1. 人 BNA 图集[^2]。[图集 CSV 文件](../../assets/atlas_csv/human_bna.csv)。
-1. 黑猩猩 BNA 图集[^3]。[图集 CSV 文件](../../assets/atlas_csv/chimpanzee_bna.csv)。
-1. 猕猴 CHARM 5-level [^4]。[图集 CSV 文件](../../assets/atlas_csv/macaque_charm5.csv)。
-1. 猕猴 CHARM 6-level [^4]。[图集 CSV 文件](../../assets/atlas_csv/macaque_charm6.csv)。
-1. 猕猴 BNA 图集[^5]。[图集 CSV 文件](../../assets/atlas_csv/macaque_bna.csv)。
-1. 猕猴 D99 图集[^6]。[图集 CSV 文件](../../assets/atlas_csv/macaque_d99.csv)。
+1. 人 Glasser (HCP-MMP) 图集[^1]。[图集 CSV 文件](../assets/atlas_csv/human_glasser.csv)。
+1. 人 BNA 图集[^2]。[图集 CSV 文件](../assets/atlas_csv/human_bna.csv)。
+1. 黑猩猩 BNA 图集[^3]。[图集 CSV 文件](../assets/atlas_csv/chimpanzee_bna.csv)。
+1. 猕猴 CHARM 5-level [^4]。[图集 CSV 文件](../assets/atlas_csv/macaque_charm5.csv)。
+1. 猕猴 CHARM 6-level [^4]。[图集 CSV 文件](../assets/atlas_csv/macaque_charm6.csv)。
+1. 猕猴 BNA 图集[^5]。[图集 CSV 文件](../assets/atlas_csv/macaque_bna.csv)。
+1. 猕猴 D99 图集[^6]。[图集 CSV 文件](../assets/atlas_csv/macaque_d99.csv)。
 
 [^1]:
     Glasser, M. F., Coalson, T. S., Robinson, E. C., Hacker, C. D., Harwell, J., Yacoub, E., Ugurbil, K., Andersson, J., Beckmann, C. F., Jenkinson, M., Smith, S. M., & Van Essen, D. C. (2016). A multi-modal parcellation of human cerebral cortex. Nature, 536(7615), Article 7615. https://doi.org/10.1038/nature18933
