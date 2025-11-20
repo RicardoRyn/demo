@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/RicardoRyn/demo/compare/v0.2.0...v0.3.0) (2025-11-20)
+
+
+### Features ✨
+
+* add zensical page ([fcf5145](https://github.com/RicardoRyn/demo/commit/fcf5145348e8d3981b530a923145508481ff975c))
+
 ## [0.2.0](https://github.com/RicardoRyn/demo/compare/v0.1.0...v0.2.0) (2025-11-19)
 
 
