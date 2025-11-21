@@ -61,7 +61,8 @@ nav = [
     "usage/brain_surface.md",
     "usage/brain_connectivity.md"
   ]},
-  { "zensical" = "zensical.md" }
+  { "zensical" = "zensical.md" },
+  { "markdown" = "markdown.md" }
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
