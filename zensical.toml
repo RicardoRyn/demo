@@ -49,10 +49,10 @@ Copyright &copy; 2025 Ricardo Ryn
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
-  { "🧭 简介" = "index.md" },
-  { "📦 安装" = "installation.md" },
-  { "🔄 更新" = "changelog.md" },
-  { "🚀 使用" = [
+  { "简介" = "index.md" },
+  { "安装" = "installation.md" },
+  { "更新" = "changelog.md" },
+  { "使用" = [
     "usage/single_group.md",
     "usage/multi_groups.md",
     "usage/matrix.md",

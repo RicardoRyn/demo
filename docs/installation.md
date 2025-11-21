@@ -1,3 +1,7 @@
+---
+icon: lucide/download
+---
+
 # 安装
 
 ## 安装方式
