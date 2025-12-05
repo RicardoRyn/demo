@@ -48,23 +48,23 @@ Copyright &copy; 2025 Ricardo Ryn
 
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-nav = [
-  { "简介" = "index.md" },
-  { "安装" = "installation.md" },
-  { "更新" = "changelog.md" },
-  { "API" = "api/index.md" },
-  { "使用" = [
-    "usage/single_group.md",
-    "usage/multi_groups.md",
-    "usage/matrix.md",
-    "usage/correlation.md",
-    "usage/circos.md",
-    "usage/brain_surface.md",
-    "usage/brain_connectivity.md"
-  ]},
-  { "zensical" = "zensical.md" },
-  { "markdown" = "markdown.md" }
-]
+# nav = [
+#   { "简介" = "index.md" },
+#   { "安装" = "installation.md" },
+#   { "更新" = "changelog.md" },
+#   { "API" = "api/index.md" },
+#   { "使用" = [
+#     "usage/single_group.md",
+#     "usage/multi_groups.md",
+#     "usage/matrix.md",
+#     "usage/correlation.md",
+#     "usage/circos.md",
+#     "usage/brain_surface.md",
+#     "usage/brain_connectivity.md"
+#   ]},
+#   { "zensical" = "zensical.md" },
+#   { "markdown" = "markdown.md" }
+# ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
@@ -331,3 +331,12 @@ view = "material/eye"
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
 link = "https://github.com/RicardoRyn"
+
+[project.plugins.mkdocstrings.handlers.python]
+inventories = ["https://docs.python.org/3/objects.inv"]
+paths = ["src"]
+
+[project.plugins.mkdocstrings.handlers.python.options]
+docstring_style = "google"
+inherited_members = true
+show_source = false
