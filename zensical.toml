@@ -9,23 +9,22 @@ edit_uri = "edit/main/docs/"
 copyright = """
 Copyright &copy; 2025 Ricardo Ryn
 """
-# nav = [
-#   { "简介" = "index.md" },
-#   { "安装" = "installation.md" },
-#   { "更新" = "changelog.md" },
-#   { "API" = "api/index.md" },
-#   { "使用" = [
-#     "usage/single_group.md",
-#     "usage/multi_groups.md",
-#     "usage/matrix.md",
-#     "usage/correlation.md",
-#     "usage/circos.md",
-#     "usage/brain_surface.md",
-#     "usage/brain_connectivity.md"
-#   ]},
-#   { "zensical" = "zensical.md" },
-#   { "markdown" = "markdown.md" }
-# ]
+
+nav = [
+  { "简介" = "index.md" },
+  { "安装" = "installation.md" },
+  { "更新" = "changelog.md" },
+  { "使用" = [
+    "usage/single_group.md",
+    "usage/multi_groups.md",
+    "usage/matrix.md",
+    "usage/correlation.md",
+    "usage/circos.md",
+    "usage/brain_surface.md",
+    "usage/brain_connectivity.md"
+  ]},
+  { "API" = "api/index.md" }
+]
 
 [project.theme]
 favicon = "assets/images/favicon.png"
