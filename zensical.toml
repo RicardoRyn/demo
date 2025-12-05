@@ -11,33 +11,30 @@
 # The site_name is shown in the page header and the browser window title
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_name
-site_name = "plotfig"
+site_name = "Documentation"
 
 # The site_description is included in the HTML head and should contain a
 # meaningful description of the site content for use by search engines.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_description
-site_description = "一个用于认知神经领域科研绘图的python包。"
+site_description = "A new project generated from the default template project."
 
 # The site_author attribute. This is used in the HTML head element.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_author
-site_author = "Ricardo Ryn"
+site_author = "<your name here>"
 
 # The site_url is the canonical URL for your site. When building online
 # documentation you should set this.
 # Read more: https://zensical.org/docs/setup/basics/#site_url
-site_url = "https://ricardoryn.github.io/demo"
-repo_url = "https://github.com/RicardoRyn/demo"
-repo_name = "RicardoRyn/plotfig"
-edit_uri = "edit/main/docs/"
+#site_url = "https://www.example.com/"
 
 # The copyright notice appears in the page footer and can contain an HTML
 # fragment.
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2025 Ricardo Ryn
+Copyright &copy; 2025 The authors
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -45,25 +42,11 @@ Copyright &copy; 2025 Ricardo Ryn
 # derive the navigation structure from the directory structure of your
 # "docs_dir". The definition below demonstrates how a navigation structure
 # can be defined using TOML syntax.
-
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 # nav = [
-#   { "简介" = "index.md" },
-#   { "安装" = "installation.md" },
-#   { "更新" = "changelog.md" },
-#   { "API" = "api.md" },
-#   { "使用" = [
-#     "usage/single_group.md",
-#     "usage/multi_groups.md",
-#     "usage/matrix.md",
-#     "usage/correlation.md",
-#     "usage/circos.md",
-#     "usage/brain_surface.md",
-#     "usage/brain_connectivity.md"
-#   ]},
-#   { "zensical" = "zensical.md" },
-#   { "markdown" = "markdown.md" }
+#   { "Get started" = "index.md" },
+#   { "Markdown in 5min" = "markdown.md" },
 # ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
@@ -90,7 +73,7 @@ Copyright &copy; 2025 Ricardo Ryn
 [project.theme]
 
 # change this to "classic" to use the traditional Material for MkDocs look.
-# variant = "classic"
+#variant = "classic"
 
 # Zensical allows you to override specific blocks, partials, or whole
 # templates as well as to define your own templates. To do this, uncomment
@@ -125,7 +108,7 @@ Copyright &copy; 2025 Ricardo Ryn
 # Read more:
 # - https://zensical.org/docs/setup/language/
 #
-language = "zh"
+language = "en"
 
 # Zensical provides a number of feature toggles that change the behavior
 # of the documentation site.
@@ -139,13 +122,13 @@ features = [
     # will generate an edit button for the page. This works for common
     # repository hosting services.
     # https://zensical.org/docs/setup/repository/#code-actions
-    "content.action.edit",
+    #"content.action.edit",
 
     # If you have a repository configured and turn feature this on, Zensical
     # will generate a button that allows the user to view the Markdown
     # code for the current page.
     # https://zensical.org/docs/setup/repository/#code-actions
-    "content.action.view",
+    #"content.action.view",
 
     # Code annotations allow you to add an icon with a tooltip to your
     # code blocks to provide explanations at crucial points.
@@ -185,7 +168,7 @@ features = [
     # Turn on this feature to expand all collapsible sections in the
     # navigation sidebar by default.
     # https://zensical.org/docs/setup/navigation/#navigation-expansion
-    "navigation.expand",
+    # "navigation.expand",
 
     # This feature turns on navigation elements in the footer that allow the
     # user to navigate to a next or previous page.
@@ -216,27 +199,27 @@ features = [
     # When navigation paths are activated, a breadcrumb navigation is rendered
     # above the title of each page
     # https://zensical.org/docs/setup/navigation/#navigation-path
-    # "navigation.path",
+    "navigation.path",
 
     # When pruning is enabled, only the visible navigation items are included
     # in the rendered HTML, reducing the size of the built site by 33% or more.
     # https://zensical.org/docs/setup/navigation/#navigation-pruning
-    # "navigation.prune",
+    #"navigation.prune",
 
     # When sections are enabled, top-level sections are rendered as groups in
     # the sidebar for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-sections
-    # "navigation.sections",
+    "navigation.sections",
 
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    # "navigation.tabs",
+    #"navigation.tabs",
 
     # When sticky tabs are enabled, navigation tabs will lock below the header
     # and always remain visible when scrolling down.
     # https://zensical.org/docs/setup/navigation/#sticky-navigation-tabs
-    # "navigation.tabs.sticky",
+    #"navigation.tabs.sticky",
 
     # A back-to-top button can be shown when the user, after scrolling down,
     # starts to scroll up again.
@@ -274,25 +257,15 @@ features = [
 # Read more:
 # - https://zensical.org/docs/setup/colors/
 # ----------------------------------------------------------------------------
-# Palette toggle for automatic mode
 [[project.theme.palette]]
-media = "(prefers-color-scheme)"
-toggle.icon = "lucide/sun-moon"
-toggle.name = "Switch to light mode"
-
-# Palette toggle for light mode
-[[project.theme.palette]]
-media = "(prefers-color-scheme: light)"
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
 
-# Palette toggle for dark mode
 [[project.theme.palette]]
-media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
-toggle.name = "Switch to system preference"
+toggle.name = "Switch to light mode"
 
 # ----------------------------------------------------------------------------
 # In the "font" subsection you can configure the fonts used. By default, fonts
@@ -319,24 +292,22 @@ toggle.name = "Switch to system preference"
 # - https://zensical.org/docs/setup/logo-and-icons
 # - https://zensical.org/docs/authoring/icons-emojis/#search
 # ----------------------------------------------------------------------------
-[project.theme.icon]
-# logo = "lucide/smile"
-# repo = "lucide/smile"
-edit = "material/pencil"
-view = "material/eye"
+#[project.theme.icon]
+#logo = "lucide/smile"
+#repo = "lucide/smile"
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
-[[project.extra.social]]
-icon = "fontawesome/brands/github"
-link = "https://github.com/RicardoRyn"
+#[[project.extra.social]]
+#icon = "fontawesome/brands/github"
+#link = "https://github.com/user/repo"
 
 [project.plugins.mkdocstrings.handlers.python]
-# inventories = ["https://docs.python.org/3/objects.inv"]
+inventories = ["https://docs.python.org/3/objects.inv"]
 paths = ["src"]
 
-# [project.plugins.mkdocstrings.handlers.python.options]
-# docstring_style = "google"
-# inherited_members = true
-# show_source = false
+[project.plugins.mkdocstrings.handlers.python.options]
+docstring_style = "google"
+inherited_members = true
+show_source = false

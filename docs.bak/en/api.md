@@ -1,0 +1,3 @@
+# API
+
+::: demo.MyClass

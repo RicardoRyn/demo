@@ -1,30 +1,166 @@
-# 简介
-
-`plotfig` 是一个专为科学数据可视化设计的 Python 库，致力于为认知神经科研工作人员提供高效、易用且美观的图形绘制工具。
-该项目基于业界主流的可视化库—— `matplotlib`、`surfplot` 和 `plotly`等库开发，融合了三者的强大功能，能够满足神经科学以及脑连接组学中多种场景下的复杂绘图需求。
-
-![plotfig](./assets/plotfig.png)
-
-## 项目结构
-
-项目采用模块化设计，包含如下主要功能模块：
-
-- `bar.py`：条形图绘制，适用于分组数据的对比展示。
-- `correlation.py`：相关性矩阵可视化，便于分析变量间的相关性分布。
-- `matrix.py`：通用矩阵可视化，支持多种配色和注释方式。
-- `brain_surface.py`：脑表面可视化，实现三维脑表面图集结构的绘制。
-- `circos.py`：弦图可视化，适合平面展示脑区之间的连接关系。
-- `brain_connection.py`：玻璃脑连接可视化，支持复杂的脑网络结构展示。
-
-## 特性
-
-- `plotfig` API 设计简洁，参数灵活，适合科研人员和数据分析师快速集成到自己的数据分析流程中。
-- 其模块化架构便于后续功能扩展和自定义开发。
-- 结合 `matplotlib` 支持矢量图或高分辨率位图和交互式 HTML 输出，适合论文发表和学术展示。
-
+---
+icon: lucide/rocket
 ---
 
-烫知识：一张图上的所有元素[^1]。
-![Parts of a Figure](https://matplotlib.org/stable/_images/anatomy.png)
+# Get started
 
-[^1]: [Quick start guide of matplotlib.](https://matplotlib.org/stable/tutorials/introductory/usage.html#parts-of-a-figure)
+For full documentation visit [zensical.org](https://zensical.org/docs/).
+
+## Commands
+
+* [`zensical new`][new] - Create a new project
+* [`zensical serve`][serve] - Start local web server
+* [`zensical build`][build] - Build your site
+
+  [new]: https://zensical.org/docs/usage/new/
+  [serve]: https://zensical.org/docs/usage/preview/
+  [build]: https://zensical.org/docs/usage/build/
+
+## Examples
+
+### Admonitions
+
+> Go to [documentation](https://zensical.org/docs/authoring/admonitions/)
+
+!!! note
+
+    This is a **note** admonition. Use it to provide helpful information.
+
+!!! warning
+
+    This is a **warning** admonition. Be careful!
+
+### Details
+
+> Go to [documentation](https://zensical.org/docs/authoring/admonitions/#collapsible-blocks)
+
+??? info "Click to expand for more info"
+    
+    This content is hidden until you click to expand it.
+    Great for FAQs or long explanations.
+
+## Code Blocks
+
+> Go to [documentation](https://zensical.org/docs/authoring/code-blocks/)
+
+``` python hl_lines="2" title="Code blocks"
+def greet(name):
+    print(f"Hello, {name}!") # (1)!
+
+greet("Python")
+```
+
+1.  > Go to [documentation](https://zensical.org/docs/authoring/code-blocks/#code-annotations)
+
+    Code annotations allow to attach notes to lines of code.
+
+Code can also be highlighted inline: `#!python print("Hello, Python!")`.
+
+## Content tabs
+
+> Go to [documentation](https://zensical.org/docs/authoring/content-tabs/)
+
+=== "Python"
+
+    ``` python
+    print("Hello from Python!")
+    ```
+
+=== "Rust"
+
+    ``` rs
+    println!("Hello from Rust!");
+    ```
+
+## Diagrams
+
+> Go to [documentation](https://zensical.org/docs/authoring/diagrams/)
+
+``` mermaid
+graph LR
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
+  D --> B;
+  B ---->|No| E[Yay!];
+```
+
+## Footnotes
+
+> Go to [documentation](https://zensical.org/docs/authoring/footnotes/)
+
+Here's a sentence with a footnote.[^1]
+
+Hover it, to see a tooltip.
+
+[^1]: This is the footnote.
+
+
+## Formatting
+
+> Go to [documentation](https://zensical.org/docs/authoring/formatting/)
+
+- ==This was marked (highlight)==
+- ^^This was inserted (underline)^^
+- ~~This was deleted (strikethrough)~~
+- H~2~O
+- A^T^A
+- ++ctrl+alt+del++
+
+## Icons, Emojis
+
+> Go to [documentation](https://zensical.org/docs/authoring/icons-emojis/)
+
+* :sparkles: `:sparkles:`
+* :rocket: `:rocket:`
+* :tada: `:tada:`
+* :memo: `:memo:`
+* :eyes: `:eyes:`
+
+## Maths
+
+> Go to [documentation](https://zensical.org/docs/authoring/math/)
+
+$$
+\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
+$$
+
+!!! warning "Needs configuration"
+    Note that MathJax is included via a `script` tag on this page and is not
+    configured in the generated default configuration to avoid including it
+    in a pages that do not need it. See the documentation for details on how
+    to configure it on all your pages if they are more Maths-heavy than these
+    simple starter pages.
+
+<script id="MathJax-script" async src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [["\\(", "\\)"]],
+      displayMath: [["\\[", "\\]"]],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      ignoreHtmlClass: ".*|",
+      processHtmlClass: "arithmatex"
+    }
+  };
+</script>
+
+## Task Lists
+
+> Go to [documentation](https://zensical.org/docs/authoring/lists/#using-task-lists)
+
+* [x] Install Zensical
+* [x] Configure `zensical.toml`
+* [x] Write amazing documentation
+* [ ] Deploy anywhere
+
+## Tooltips
+
+> Go to [documentation](https://zensical.org/docs/authoring/tooltips/)
+
+[Hover me][example]
+
+  [example]: https://example.com "I'm a tooltip!"
