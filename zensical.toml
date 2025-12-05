@@ -52,7 +52,7 @@ Copyright &copy; 2025 Ricardo Ryn
 #   { "简介" = "index.md" },
 #   { "安装" = "installation.md" },
 #   { "更新" = "changelog.md" },
-#   { "API" = "api/index.md" },
+#   { "API" = "api.md" },
 #   { "使用" = [
 #     "usage/single_group.md",
 #     "usage/multi_groups.md",
@@ -333,10 +333,10 @@ icon = "fontawesome/brands/github"
 link = "https://github.com/RicardoRyn"
 
 [project.plugins.mkdocstrings.handlers.python]
-inventories = ["https://docs.python.org/3/objects.inv"]
+# inventories = ["https://docs.python.org/3/objects.inv"]
 paths = ["src"]
 
-[project.plugins.mkdocstrings.handlers.python.options]
-docstring_style = "google"
-inherited_members = true
-show_source = false
+# [project.plugins.mkdocstrings.handlers.python.options]
+# docstring_style = "google"
+# inherited_members = true
+# show_source = false
