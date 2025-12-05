@@ -52,6 +52,7 @@ nav = [
   { "简介" = "index.md" },
   { "安装" = "installation.md" },
   { "更新" = "changelog.md" },
+  { "API" = "api/index.md" },
   { "使用" = [
     "usage/single_group.md",
     "usage/multi_groups.md",
