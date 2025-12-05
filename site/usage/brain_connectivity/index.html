@@ -657,6 +657,17 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
+        快速出图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         结果展示
       
     </span>
@@ -738,6 +749,17 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
+        快速出图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         结果展示
       
     </span>
@@ -779,6 +801,8 @@
 <h1 id="_1">脑连接图<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>透明的大脑图，可以展示脑区间的连接关系。
 需要准备左右半脑的surface文件、脑区相关的nii.gz文件以及连接矩阵。</p>
+<h2 id="_2">快速出图<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>全部参数见<a href="../../api/#plotfig.brain_connection.plot_brain_connection_figure"><code>plot_brain_connection_figure</code></a>的 API 文档。</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">plotfig</span><span class="w"> </span><span class="kn">import</span> <span class="n">plot_brain_connection_figure</span><span class="p">,</span> <span class="n">gen_symmetric_matrix</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
@@ -804,7 +828,7 @@
 </span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="n">nodes_name</span><span class="o">=</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;ROI_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">connectome</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])],</span>
 </span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="p">)</span>
 </span></code></pre></div>
-<h2 id="_2">结果展示<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_3">结果展示<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p><img alt="output" src="../brain_connectivity_files/output.gif" /></p>
 <p>html文件可以在浏览器中交互。可以手动截图，也可以使用以下命令来批量生成多视角生成图片。</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
