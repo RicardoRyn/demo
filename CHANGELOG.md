@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0](https://github.com/RicardoRyn/demo/compare/v0.3.0...v0.4.0) (2025-12-05)
+
+
+### Features ✨
+
+* **docs:** add API documentation link to sidebar ([3ebb148](https://github.com/RicardoRyn/demo/commit/3ebb1483f301dc09323b5e4535d85926837a0fec))
+* **docs:** add mkdocstrings-python and configure for Google style ([56af925](https://github.com/RicardoRyn/demo/commit/56af925e0a1408c0d3f9d786965492cb1963501e))
+
 ## [0.3.0](https://github.com/RicardoRyn/demo/compare/v0.2.0...v0.3.0) (2025-11-20)
 
 
